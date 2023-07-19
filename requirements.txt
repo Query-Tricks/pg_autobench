@@ -1,0 +1,4 @@
+pyyaml
+psutil
+py-cpuinfo
+pandas

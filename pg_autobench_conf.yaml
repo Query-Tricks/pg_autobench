@@ -1,0 +1,22 @@
+general_config:
+  csv_output_path : '/home/experdb/bench'
+  log_path:
+
+connection_info:
+  db_kind: 'PG'
+  host: 'localhost'
+  user: 'experdba'
+  database: 'experdb'
+pgbench:
+  bench_init:
+    init_steps: 'dtGvpf'
+    partitions: 10
+    fillfactor: 10
+    scale: 100
+  bench_info:
+    client_num: 100
+    transaction_num: 10000
+    overhead_check: False
+    threads: 1
+    protocol: 'simple'
+    no-vacuum: False
